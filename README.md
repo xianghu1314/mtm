@@ -7,7 +7,7 @@ go get github.com/xianghu1314/mtm
 #### 调用
 ```$xslt
 	//模型转换
-	t2s := mtm.CreateTableToStruct(&Tool.Options{
+	t2s := mtm.CreateTableToStruct(&mtm.Options{
 		MySqlUrl:                "XXX",
 		FileName:                "Models.go",
 		IfOneFile:               true,
