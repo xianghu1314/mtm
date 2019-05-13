@@ -1,5 +1,5 @@
 # mtm项目简介
-MySql数据库表装换Go Struct(mysql to model)简称(mtm)
+MySql数据库表转换Go Struct(mysql to model)简称(mtm)
 大型项目，一般采用数据库先行的设计方式，该工具很好的实现了从数据库到Go Struct代码的转换，减少了手动写Struct的时间。
 # 使用方法
 #### 获取
