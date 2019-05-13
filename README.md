@@ -5,7 +5,7 @@ MySql数据库表装换Go Struct(mysql to model)简称(mtm)
 #### 获取
 go get github.com/xianghu1314/mtm
 #### 调用
-```
+```go
 //模型转换
 t2s := mtm.CreateTableToStruct(&mtm.Options{
     MySqlUrl:                "XXX",
@@ -24,7 +24,7 @@ if err != nil {
 }
 ```
 #### 参数说明
-```
+```go
 type Options struct {
 	MySqlUrl                string //数据库地址 DSN (Data Source Name) ：[username[:password]@][protocol[(address)]]/dbname[?param1=value1&...&paramN=valueN]
 	IfOneFile               bool   //多个表是否放在同一文件 true=同一文件 默认false
@@ -38,7 +38,7 @@ type Options struct {
 }
 ```
 #### 生成样例
-```
+```sql
 CREATE TABLE `back_users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL COMMENT '真实姓名',
